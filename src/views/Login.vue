@@ -13,14 +13,13 @@
             <div class="layui-form layui-form-pane">
               <form method="post">
                 <div class="layui-form-item">
-                  <label for="L_email" class="layui-form-label">邮箱</label>
+                  <label for="L_email" class="layui-form-label">用户名</label>
                   <div class="layui-input-inline">
                     <input
                       type="text"
-                      id="L_email"
-                      name="email"
-                      required
-                      lay-verify="required"
+                  
+                      name="username"
+                     placeholder="请输入用户名"
                       autocomplete="off"
                       class="layui-input"
                     />
@@ -31,25 +30,22 @@
                   <div class="layui-input-inline">
                     <input
                       type="password"
-                      id="L_pass"
-                      name="pass"
-                      required
-                      lay-verify="required"
+                      name="password"
+                      placeholder="请输入密码"
                       autocomplete="off"
                       class="layui-input"
                     />
                   </div>
                 </div>
                 <div class="layui-form-item">
-                  <label for="L_vercode" class="layui-form-label">人类验证</label>
+                  <label for="L_vercode" class="layui-form-label">验证码</label>
                   <div class="layui-input-inline">
                     <input
                       type="text"
-                      id="L_vercode"
-                      name="vercode"
-                      required
-                      lay-verify="required"
-                      placeholder="请回答后面的问题"
+                      
+                      name="code"
+                     
+                      placeholder="请输入验证码"
                       autocomplete="off"
                       class="layui-input"
                     />
@@ -59,7 +55,7 @@
                   </div>
                 </div>
                 <div class="layui-form-item">
-                  <button class="layui-btn" lay-filter="*" lay-submit>立即登录</button>
+                  <button class="layui-btn">立即登录</button>
                   <span style="padding-left:20px;">
                     <router-link :to="{name: 'forget'}">忘记密码？</router-link>
                   </span>
